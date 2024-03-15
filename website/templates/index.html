@@ -29,7 +29,9 @@
         {% else %}
         <p> Task complete</p>
         {% endif %}
-
+        {% if message %}
+            <p> {{message}}</p>
+        {% endif %}
        
     </div>
     <p><a href="/delete/{{ task.id}}"> Delete Task</a></p>
